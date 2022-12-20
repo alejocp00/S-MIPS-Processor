@@ -2594,11 +2594,36 @@
       <a name="label" val="WriteTime"/>
     </comp>
   </circuit>
+  <circuit name="Data Path">
+    <a name="circuit" val="Data Path"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <comp loc="(350,270)" name="Register File"/>
+    <comp loc="(470,270)" name="ALU"/>
+    <comp loc="(140,220)" name="Instruction Decoder"/>
+    <comp loc="(80,360)" name="Branch Control"/>
+  </circuit>
   <circuit name="Register File">
     <a name="circuit" val="Register File"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M66,51 Q70,61 74,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="80" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="104">RF</text>
+      <circ-port height="8" pin="70,40" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="100,150" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="90,510" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="90,560" width="8" x="46" y="136"/>
+      <circ-port height="10" pin="1680,80" width="10" x="125" y="65"/>
+      <circ-port height="10" pin="1680,170" width="10" x="125" y="125"/>
+      <circ-port height="8" pin="330,1040" width="8" x="66" y="146"/>
+      <circ-port height="8" pin="1170,1050" width="8" x="86" y="146"/>
+      <circ-port height="8" pin="1250,1050" width="8" x="106" y="146"/>
+      <circ-anchor facing="east" height="6" width="6" x="127" y="97"/>
+    </appear>
     <wire from="(680,200)" to="(680,210)"/>
     <wire from="(1000,680)" to="(1000,690)"/>
     <wire from="(2220,620)" to="(2220,660)"/>
@@ -4552,19 +4577,14 @@
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <path d="M104,95 Q108,105 112,95" fill="none" stroke="#808080" stroke-width="2"/>
-      <polyline fill="none" points="90,140 90,120" stroke="#000000"/>
-      <polyline fill="none" points="90,120 100,110" stroke="#000000"/>
-      <polyline fill="none" points="90,140 130,120" stroke="#000000"/>
-      <polyline fill="none" points="100,110 90,100" stroke="#000000"/>
-      <polyline fill="none" points="90,100 90,80" stroke="#000000"/>
-      <polyline fill="none" points="90,80 130,100" stroke="#000000"/>
-      <polyline fill="none" points="130,100 130,120" stroke="#000000"/>
-      <circ-port height="8" pin="100,90" width="8" x="86" y="126"/>
-      <circ-port height="8" pin="100,200" width="8" x="86" y="86"/>
-      <circ-port height="8" pin="1400,700" width="8" x="106" y="126"/>
-      <circ-port height="10" pin="1650,200" width="10" x="125" y="105"/>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="107"/>
+      <path d="M32,119 Q36,129 40,119" fill="none" stroke="#808080" stroke-width="2"/>
+      <polygon fill="#ffffff" points="30,30 30,70 50,80 30,90 30,130 80,100 80,60" stroke="#000000" stroke-width="2"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="63" y="84">ALU</text>
+      <circ-port height="8" pin="100,90" width="8" x="26" y="106"/>
+      <circ-port height="8" pin="100,200" width="8" x="26" y="46"/>
+      <circ-port height="8" pin="1400,700" width="8" x="56" y="106"/>
+      <circ-port height="10" pin="1650,200" width="10" x="75" y="75"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="77"/>
     </appear>
     <wire from="(870,420)" to="(870,430)"/>
     <wire from="(1010,430)" to="(1100,430)"/>
@@ -4896,6 +4916,30 @@
       <a name="width" val="32"/>
       <a name="value" val="0x0"/>
     </comp>
+  </circuit>
+  <circuit name="Instruction Decoder">
+    <a name="circuit" val="Instruction Decoder"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="60" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="104">ID</text>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="47"/>
+    </appear>
+  </circuit>
+  <circuit name="Branch Control">
+    <a name="circuit" val="Branch Control"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="60" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="84">BC</text>
+      <circ-anchor facing="east" height="6" width="6" x="97" y="77"/>
+    </appear>
   </circuit>
   <circuit name="to_positive">
     <a name="circuit" val="to_positive"/>
