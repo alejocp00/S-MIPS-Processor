@@ -2613,6 +2613,15 @@
       <path d="M66,51 Q70,61 74,51" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="80" x="50" y="50"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="91" y="104">RF</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="100" y="147">SA</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="120" y="147">SB</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="122" y="71">A</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="121" y="131">B</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="58" y="142">Rst</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="59" y="122">RW</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="58" y="63">DA</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="57" y="83">DI</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="70" y="147">clock</text>
       <circ-port height="8" pin="70,40" width="8" x="46" y="56"/>
       <circ-port height="8" pin="100,150" width="8" x="46" y="76"/>
       <circ-port height="8" pin="90,510" width="8" x="46" y="116"/>
@@ -2620,8 +2629,8 @@
       <circ-port height="10" pin="1680,80" width="10" x="125" y="65"/>
       <circ-port height="10" pin="1680,170" width="10" x="125" y="125"/>
       <circ-port height="8" pin="330,1040" width="8" x="66" y="146"/>
-      <circ-port height="8" pin="1170,1050" width="8" x="86" y="146"/>
-      <circ-port height="8" pin="1250,1050" width="8" x="106" y="146"/>
+      <circ-port height="8" pin="1170,1050" width="8" x="96" y="146"/>
+      <circ-port height="8" pin="1250,1050" width="8" x="116" y="146"/>
       <circ-anchor facing="east" height="6" width="6" x="127" y="97"/>
     </appear>
     <wire from="(680,200)" to="(680,210)"/>
@@ -3484,7 +3493,7 @@
     <comp lib="0" loc="(1510,600)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
-      <a name="label" val="SB"/>
+      <a name="label" val="SA"/>
     </comp>
     <comp lib="0" loc="(390,260)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3890,7 +3899,7 @@
     <comp lib="0" loc="(2170,600)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="5"/>
-      <a name="label" val="SA"/>
+      <a name="label" val="SB"/>
     </comp>
     <comp lib="4" loc="(700,360)" name="Register">
       <a name="width" val="32"/>
@@ -3980,6 +3989,8 @@
       <a name="facing" val="north"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
+      <a name="label" val="SA"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(320,180)" name="Tunnel">
       <a name="width" val="32"/>
@@ -4177,7 +4188,7 @@
     <comp lib="0" loc="(1680,580)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="label" val="B"/>
+      <a name="label" val="A"/>
     </comp>
     <comp lib="0" loc="(280,120)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -4300,6 +4311,8 @@
       <a name="facing" val="north"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
+      <a name="label" val="SB"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(1040,190)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -4411,7 +4424,7 @@
     <comp lib="0" loc="(2340,580)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="label" val="A"/>
+      <a name="label" val="B"/>
     </comp>
     <comp lib="0" loc="(430,300)" name="Tunnel">
       <a name="facing" val="north"/>
