@@ -1,0 +1,63 @@
+nop     000000  00000   00000   00000   00000   000000|
+
+------------------------------------------------------|
+                    Aritméticos                       |
+add     000000  sssss   ttttt   ddddd   00000   100000|
+and     000000  sssss   ttttt   ddddd   00000   100100|
+xor     000000  sssss   ttttt   ddddd   00000   101000|
+or      000000  sssss   ttttt   ddddd   00000   100101|
+sub     000000  sssss   ttttt   ddddd   00000   100010|
+nor     000000  sssss   ttttt   ddddd   00000   100111|
+slt     000000  sssss   ttttt   ddddd   00000   101010|
+sltu    000000  sssss   ttttt   ddddd   00000   101011|
+------------------------------------------------------|
+
+------------------------------------------------------|
+                    Saltos                            |
+jr      000000  sssss   00000   00000   00000   001000|
+j       000010  eeeee   eeeee   eeeee   eeeee   eeeeee| (e es destino)
+bltz    000001  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+beq     000100  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+bne     000101  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+blez    000110  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+bgtz    000111  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+------------------------------------------------------|
+
+------------------------------------------------------|
+                Aritméticos raritos                   |
+addi    001000  sssss   ttttt   ccccc   ccccc   cccccc|
+slti    001010  sssss   ttttt   ccccc   ccccc   cccccc|
+sltiu   001011  sssss   ttttt   ccccc   ccccc   cccccc|
+andi    001100  sssss   ttttt   ccccc   ccccc   cccccc|
+ori     001101  sssss   ttttt   ccccc   ccccc   cccccc|
+xori    001110  sssss   ttttt   ccccc   ccccc   cccccc|
+------------------------------------------------------|
+
+------------------------------------------------------|
+                Aritméticos autistas                  |
+mult    000000  sssss   ttttt   00000   00000   011000|
+mulu    000000  sssss   ttttt   00000   00000   011001|
+div     000000  sssss   ttttt   00000   00000   011010|
+divu    000000  sssss   ttttt   00000   00000   011011|
+------------------------------------------------------|
+
+------------------------------------------------------|
+                Peticiones Especiales                 |
+mfhi    000000  00000   00000   ddddd   00000   010000|
+mflo    000000  00000   00000   ddddd   00000   010010|
+------------------------------------------------------|
+
+------------------------------------------------------|
+                El trabajo compila                    |
+pop     111000  00000   00000   ddddd   00000   000000|
+push    111000  sssss   00000   00000   00000   000001|
+------------------------------------------------------|
+
+
+tty     111111  sssss   00000   00000   00000   000001|
+rnd     111111  00000   00000   ddddd   00000   000010|
+kbd     111111  00000   00000   ddddd   00000   000100|
+
+halt    111111  00000   00000   00000   00000   111111|
+lw      100011  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
+sw      101011  sssss   ttttt   ccccc   ccccc   cccccc| (c es ofset)
