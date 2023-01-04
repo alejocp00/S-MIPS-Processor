@@ -3382,8 +3382,8 @@
     <wire from="(1330,630)" to="(1340,630)"/>
     <wire from="(1160,20)" to="(1170,20)"/>
     <wire from="(1250,580)" to="(1320,580)"/>
-    <wire from="(410,260)" to="(430,260)"/>
     <wire from="(1850,70)" to="(1860,70)"/>
+    <wire from="(410,260)" to="(430,260)"/>
     <wire from="(1730,70)" to="(1740,70)"/>
     <wire from="(1630,290)" to="(1640,290)"/>
     <wire from="(1690,30)" to="(1700,30)"/>
@@ -4342,6 +4342,9 @@
       <a name="label" val="cs_kbd"/>
     </comp>
     <comp loc="(790,210)" name="Instruction Decoder"/>
+    <comp lib="0" loc="(1140,60)" name="Probe">
+      <a name="facing" val="north"/>
+    </comp>
     <comp lib="0" loc="(1240,1100)" name="Tunnel">
       <a name="label" val="ori"/>
     </comp>
@@ -6669,6 +6672,12 @@
       <a name="fanout" val="6"/>
       <a name="incoming" val="6"/>
       <a name="appear" val="center"/>
+      <a name="bit0" val="5"/>
+      <a name="bit1" val="4"/>
+      <a name="bit2" val="3"/>
+      <a name="bit3" val="2"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="0"/>
     </comp>
     <comp lib="0" loc="(230,770)" name="Tunnel">
       <a name="label" val="rnd"/>
@@ -9688,15 +9697,16 @@
     <wire from="(760,240)" to="(790,240)"/>
     <wire from="(410,470)" to="(410,510)"/>
     <wire from="(1090,210)" to="(1220,210)"/>
-    <wire from="(370,90)" to="(380,90)"/>
     <wire from="(470,520)" to="(610,520)"/>
     <wire from="(380,120)" to="(390,120)"/>
     <wire from="(380,80)" to="(390,80)"/>
     <wire from="(370,110)" to="(380,110)"/>
+    <wire from="(370,90)" to="(380,90)"/>
     <wire from="(410,530)" to="(410,580)"/>
     <wire from="(360,520)" to="(440,520)"/>
     <wire from="(750,470)" to="(750,520)"/>
     <wire from="(640,520)" to="(720,520)"/>
+    <wire from="(830,250)" to="(840,250)"/>
     <wire from="(610,470)" to="(610,520)"/>
     <wire from="(780,260)" to="(790,260)"/>
     <wire from="(770,270)" to="(780,270)"/>
@@ -9715,9 +9725,9 @@
     <wire from="(380,110)" to="(380,120)"/>
     <wire from="(380,190)" to="(380,200)"/>
     <wire from="(320,530)" to="(320,540)"/>
+    <wire from="(840,250)" to="(840,280)"/>
     <wire from="(430,410)" to="(430,500)"/>
     <wire from="(380,200)" to="(420,200)"/>
-    <wire from="(830,250)" to="(850,250)"/>
     <wire from="(600,580)" to="(620,580)"/>
     <wire from="(720,580)" to="(740,580)"/>
     <wire from="(310,510)" to="(330,510)"/>
@@ -9736,6 +9746,7 @@
     <wire from="(380,190)" to="(390,190)"/>
     <wire from="(370,180)" to="(380,180)"/>
     <wire from="(320,530)" to="(330,530)"/>
+    <wire from="(840,250)" to="(850,250)"/>
     <wire from="(1050,210)" to="(1070,210)"/>
     <wire from="(780,110)" to="(790,110)"/>
     <wire from="(610,470)" to="(750,470)"/>
@@ -10142,10 +10153,6 @@
       <a name="width" val="32"/>
       <a name="label" val="Rt"/>
     </comp>
-    <comp lib="6" loc="(366,55)" name="Text">
-      <a name="text" val="Comparators"/>
-      <a name="font" val="SansSerif bold 24"/>
-    </comp>
     <comp lib="0" loc="(330,160)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
@@ -10167,10 +10174,17 @@
       <a name="width" val="32"/>
       <a name="label" val="IA conc J"/>
     </comp>
+    <comp lib="0" loc="(840,280)" name="Probe">
+      <a name="facing" val="north"/>
+    </comp>
     <comp lib="0" loc="(730,230)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="16"/>
       <a name="label" val="Const*4"/>
+    </comp>
+    <comp lib="6" loc="(368,56)" name="Text">
+      <a name="text" val="Comparators"/>
+      <a name="font" val="SansSerif bold 24"/>
     </comp>
     <comp lib="0" loc="(830,180)" name="Tunnel">
       <a name="width" val="32"/>
