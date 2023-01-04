@@ -1,4 +1,13 @@
 settings.json
-test_out/
 guide_test
 guide.txt
+./test_out/*
+./test/*
+tests-out/ale/Bank0
+tests-out/.
+tests
+tests/ale.asm
+tests-out/ale/Bank
+tests-out/ale/Bank1
+tests-out/ale/Bank2
+tests-out/ale/Bank3
